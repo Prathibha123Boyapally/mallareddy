@@ -2,11 +2,11 @@ const express=require('express')
 const app=express();
 const PORT=8888;
 app.get("/get",(request,response)=>{
-response.send("welcome to get method in Express js")
+response.send("welcome to get/user method")
 })
-app.get("/get1",(request,response)=>{
-    response.send("welcome to get1 method in express js")
+app.delete("/delete",(request,response)=>{
+    response.send("this is delete method")
 })
-app.listen(PORT,()=>{
-    console.log(`my Server is running on ${PORT}number`)
+app.listen(7766,()=>{
+    console.log("my Server is running on 7766 number")
 })
